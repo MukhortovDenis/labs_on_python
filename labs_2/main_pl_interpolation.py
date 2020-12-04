@@ -27,4 +27,5 @@ def draw_pl(points):
     plt.show()
 
 
-
+file = parse_points('points')
+draw_pl(file)

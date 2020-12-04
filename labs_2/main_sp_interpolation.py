@@ -18,3 +18,6 @@ def draw_sp(points):
         plt.plot(x1, y1)
     plt.show()
 
+
+file = parse_points('points')
+draw_sp(file)

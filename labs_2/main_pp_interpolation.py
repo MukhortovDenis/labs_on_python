@@ -33,4 +33,5 @@ def draw_pp(points):
     plt.show()
 
 
-
+file = parse_points('points')
+draw_pp(file)
