@@ -16,7 +16,7 @@ def pl_interpolation(point_x, point_y, x1):
     return res
 
 
-def draw(points):
+def draw_pl(points):
     selection_points = selection(points)
     for point in selection_points:
         x = point[0]
@@ -27,5 +27,4 @@ def draw(points):
     plt.show()
 
 
-file = parse_points('points')
-draw(file)
+

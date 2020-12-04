@@ -16,7 +16,7 @@ def pp_interpolation(point_x, point_y, arg, i):
            (((y2 - y1) / (x2 - x1)) - ((y1 - y0) / (x1 - x0)))
 
 
-def draw(points):
+def draw_pp(points):
     selection_points = selection(points)
     for point in selection_points:
         x = np.array(point[0], dtype=float)
@@ -33,5 +33,4 @@ def draw(points):
     plt.show()
 
 
-file = parse_points('points')
-draw(file)
+

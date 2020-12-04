@@ -22,7 +22,7 @@ def find_polynomial(point_x, point_y, point_x1):
     return point_y1
 
 
-def draw(points):
+def draw_pol(points):
     selection_points = selection(points)
     for point in selection_points:
         x = np.array(point[0], dtype=float)
@@ -35,4 +35,4 @@ def draw(points):
 
 
 file = parse_points('points')
-draw(file)
+draw_pol(file)

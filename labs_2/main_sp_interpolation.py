@@ -6,7 +6,7 @@ import numpy as np
 
 
 # Сплайн
-def draw(points):
+def draw_sp(points):
     selection_points = selection(points)
     for point in selection_points:
         x = np.array(point[0], dtype=float)
@@ -18,6 +18,3 @@ def draw(points):
         plt.plot(x1, y1)
     plt.show()
 
-
-file = parse_points('points')
-draw(file)
