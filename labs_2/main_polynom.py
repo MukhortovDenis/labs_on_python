@@ -4,7 +4,7 @@ from parsing import parse_points
 from selection import selection
 
 
-# Полиномчик
+# Полином
 def find_polynomial(point_x, point_y, point_x1):
     point_y1 = []
     for x1 in point_x1:

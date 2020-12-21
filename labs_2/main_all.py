@@ -9,7 +9,3 @@ def draw(points):
     draw_pl(points)
     draw_pp(points)
     draw_sp(points)
-
-
-
-

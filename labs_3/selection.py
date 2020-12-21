@@ -19,4 +19,3 @@ def selection(points):
     else:
         return []
     return selection_points
-
