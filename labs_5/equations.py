@@ -1,7 +1,7 @@
 import math
 
 
-# Берем функцию с параметрами
+# Функция с параметрами
 def fun_with_parameters(x, a, b):
     return math.tan(a * x) - b * x
 
@@ -11,6 +11,7 @@ def fun_with_parameters_derivative(x, a, b):
     return a * (1 / math.cos(a * x) ** 2) - b
 
 
+# Вторая производная функции без параметров
 def fun_with_parameters_second_derivative(x, a, b):
     return 2 * (a ** 2) * (math.sin(a * x) / (math.cos(a * x) ** 3))
 
@@ -19,12 +20,12 @@ def fun_with_parameters_second_derivative(x, a, b):
 def fi_with_parameters(x, a, b):
     return math.tan(a * x) / b
 
-
+# Производная fi(x)
 def fi_with_parameters_derivative(x, a, b):
     return a / (b * math.cos(a * x) ** 2)
 
 
-# Берем функцию без параметров
+# Функция без параметров
 def fun(x):
     return 3 * x + math.cos(x) + 1
 
