@@ -53,7 +53,7 @@ def d_rayleigh(x, sigma):
 
 # Релеевская функция распределения
 def f_rayleigh(x, sigma):
-    return 1 - math.exp(-1 * (x**2) / 2 * sigma**2)
+    return 1 - math.exp(-1 * (x**2) / (2 * sigma**2))
 
 # Плот для плотности распределения
 def plot_density(X, a, b, Type, m=0, d=0, sigma=0):
