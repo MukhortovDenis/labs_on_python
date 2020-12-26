@@ -11,7 +11,8 @@ def dichotomy_method(begin, end, eps, n):
         else:
             begin = xo
         if abs(end - begin) < (2 * eps):
-            return xo, i + 1
+            print("Количество итераций", i + 1)
+            return xo
     return "Не хватило итераций"
 
 
@@ -20,14 +21,16 @@ def dichotomy_method_params(begin, end, eps, n, a, b):
         xo = (end + begin) / 2
         if fun_with_parameters(xo, a, b) == 0:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xo, os), i + 1
+            print("Количество итераций", i + 1)
+            return round(xo, os)
         if fun_with_parameters(begin, a, b) * fun_with_parameters(xo, a, b) < 0:
             end = xo
         else:
             begin = xo
         if abs(end - begin) < 2 * eps:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xo, os), i + 1
+            print("Количество итераций", i + 1)
+            return round(xo, os)
     return "Не хватило итераций"
 
 

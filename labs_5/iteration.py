@@ -11,7 +11,8 @@ def iteration_method(xo, eps, n):
             return "Итерационный процесс расходится"
         if abs(xn - x) < eps:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xn, os), i + 1
+            print("Количество итераций", i+1)
+            return round(xn, os)
         x = xn
     return "Не хватает точности"
 
@@ -26,7 +27,8 @@ def iteration_method_params(xo, eps, n, params_one=0, params_two=0):
             return "Итерационный процесс расходится", i + 1
         if abs(xn - x) < eps:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xn, os), i + 1
+            print("Количество итераций", i+1)
+            return round(xn, os)
         x = xn
     return "Не хватает точности"
 

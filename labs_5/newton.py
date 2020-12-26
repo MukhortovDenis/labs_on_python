@@ -7,7 +7,8 @@ def newton_method(xo, eps, n):
         conditions_2 = abs(xn - xo) < eps
         if conditions_2:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xn, os), i + 1
+            print("Количество итераций", i + 1)
+            return round(xn, os)
         xo = xn
     return "Слишком мало шагов итерации"
 
@@ -18,7 +19,8 @@ def newton_method_params(xo, eps, n, a, b):
         conditions_2 = abs(xn - xo) < eps
         if conditions_2:
             os = abs(str(eps).find('.') - len(str(eps))) - 1
-            return round(xn, os), i + 1
+            print("Количество итераций", i + 1)
+            return round(xn, os)
         xo = xn
     return "Слишком мало шагов итерации"
 
